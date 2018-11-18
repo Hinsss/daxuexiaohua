@@ -1,0 +1,11 @@
+{"image_src": "http://www.521609.com/uploads/allimg/130415/1-130415105500-lp.jpg", "name": "北京大学吴天琪 2013校花"}
+{"image_src": "http://www.521609.com/uploads/allimg/130412/1-130412094550-lp.jpg", "name": "广州大学校花梁亮"}
+{"image_src": "http://www.521609.com/uploads/allimg/130409/1-130409115P8.jpg", "name": "奶茶妹妹入学清华大学新晋"}
+{"image_src": "http://www.521609.com/uploads/allimg/130407/1-13040H04256.jpg", "name": "南京审计学院美女吕若男"}
+{"image_src": "http://www.521609.com/uploads/allimg/130402/1-130402162254.jpg", "name": "临沂大学校花刘祎"}
+{"image_src": "http://www.521609.com/uploads/120503/1_122F3340.jpg", "name": "中国传媒大学校花清纯毕业"}
+{"image_src": "http://www.521609.com/uploads/120305/1_152555106.jpg", "name": "第二季全国校花大赛"}
+{"image_src": "http://www.521609.com/uploads/litimg/120201/103R413518.jpg", "name": "全国绝色校花大比拼"}
+{"image_src": "http://www.521609.com/uploads/allimg/111230/11PA264J-1-lp.jpg", "name": "上海师范大学天华学院校花"}
+{"image_src": "http://www.521609.com/uploads/allimg/111028/109554211L-1-lp.jpg", "name": "武汉大学尊小菲"}
+{"image_src": "http://www.521609.com/uploads/allimg/111023/1092K3R06-1-lp.jpg", "name": "北方名族大学校花颜紫婷"}
