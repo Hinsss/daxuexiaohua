@@ -1,0 +1,53 @@
+day09-爬虫9
+
+1、下载图片
+	笑话网
+	趣图网
+4、日志信息和等级
+	CRITICAL ： 严重错误
+	ERROR ： 一般错误
+	WARNING : 警告
+	INFO : 一般的信息
+	DEBUG ： 调试信息
+	默认的显示级别是DEBUG
+
+	# 设置错误显示级别
+	LOG_LEVEL = 'DEBUG'
+	# 将日志信息写到文件中，不要显示到屏幕中
+	LOG_FILE = 'log.txt'
+5、发送post请求
+	直接发送post请求，需要将start_urls注释掉，然后重写start_requests方法，在这个方法里面直接发送post请求
+	yield scrapy.FormRequest(url=post_url, formdata=formdata, callback=self.parse)
+2、请求传参
+	提取的数据不在同一个页面
+3、crawlspider
+	crawlspider是什么？
+		也是一个spider，是Spider的一个子类，所以其功能要比Spider要强大
+		多的一个功能是：提取链接的功能，根据一定的规则，提取指定的链接
+	链接提取器
+		LinkExtractor(
+			allow=xxx,   # 正则表达式，要（*）
+			deny=xxx,    # 正则表达式，不要这个
+			restrict_xpaths=xxx,  # xpath路径（*）
+			restrict_css=xxx, # 选择器（*）
+			deny_domains=xxx, # 不允许的域名
+		)
+	用法演示
+		scrapy shell http://www.id97.com/movie/
+		from scrapy.linkextractors import  LinkExtractor
+
+		通过正则提取链接
+			links = LinkExtractor(allow=r'/movie/\?page=\d')
+			将所有包含这个正则表达式的href全部获取到返回
+			links.extract_links(response)进行查看提取到的链接
+			【注】将重复的url去除掉
+		通过xpath提取
+			links = LinkExtractor(restrict_xpaths='//ul[@class="pagination pagination-sm"]/li/a')
+		通过css提取
+			links = LinkExtractor(restrict_css='.pagination > li > a')
+	使用
+
+		第一页： 23456 366
+		2：1 34567 366
+		3:12 45678 366
+		调度器有去重的功能，只要包含了1-366，就可以爬取所有页面
